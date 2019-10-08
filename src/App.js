@@ -1,13 +1,13 @@
 import React /*, { useState }*/ from "react";
 import "./App.css";
-import Scoreboard from "./Scoreboard";
+import Buttons from "./Buttons";
 
 function App() {
   // const [homeScore, setHomeScore] = useState(0);
   // const [awayScore, setAwayScore] = useState(0);
 
   return (
-    <Scoreboard />
+    <Buttons />
     // <div className="container">
     //   <section className="scoreboard">
     //     <div className="topRow">

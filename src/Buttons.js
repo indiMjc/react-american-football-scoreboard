@@ -1,16 +1,18 @@
 import React, { useState } from "react";
 import "./App.css";
+import TopRow from "./TopRow";
+import BottomRow from "./BottomRow";
 
 function Buttons() {
   const [homeScore, setHomeScore] = useState(0);
   const [awayScore, setAwayScore] = useState(0);
 
-  const scores = [{ score: homeScore }, { score: awayScore }];
-  // console.log(scores[0].score);
-  // console.log(scores[1].score);
-
   return (
-    <>
+    <div className="container">
+      <section className="scoreboard">
+        <TopRow homeState={homeScore} awayState={awayScore} />
+        <BottomRow />
+      </section>
       <section className="buttons">
         <div className="homeButtons">
           <button
@@ -41,7 +43,7 @@ function Buttons() {
           </button>
         </div>
       </section>
-    </>
+    </div>
   );
 }
 

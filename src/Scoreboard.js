@@ -5,6 +5,11 @@ import BottomRow from "./BottomRow";
 import Buttons from "./Buttons";
 
 function Scoreboard() {
+  let childData = score => {
+    const scores = score;
+    return scores;
+  };
+  // console.log(scores);
   return (
     <div className="container">
       <section className="scoreboard">
