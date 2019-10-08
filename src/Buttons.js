@@ -5,7 +5,9 @@ function Buttons() {
   const [homeScore, setHomeScore] = useState(0);
   const [awayScore, setAwayScore] = useState(0);
 
-  let scores = [{ score: homeScore }, { score: awayScore }];
+  const scores = [{ score: homeScore }, { score: awayScore }];
+  // console.log(scores[0].score);
+  // console.log(scores[1].score);
 
   return (
     <>

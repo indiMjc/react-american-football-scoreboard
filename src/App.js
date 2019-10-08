@@ -1,11 +1,10 @@
-//TODO: STEP 1 - Import the useState hook.
-import React, { useState } from "react";
+import React /*, { useState }*/ from "react";
 import "./App.css";
 import Scoreboard from "./Scoreboard";
 
 function App() {
-  const [homeScore, setHomeScore] = useState(0);
-  const [awayScore, setAwayScore] = useState(0);
+  // const [homeScore, setHomeScore] = useState(0);
+  // const [awayScore, setAwayScore] = useState(0);
 
   return (
     <Scoreboard />
